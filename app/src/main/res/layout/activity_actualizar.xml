@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityActualizar"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/ivactu"
+        android:layout_width="300dp"
+        android:layout_height="179dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:foreground="@drawable/profilephoto"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/white_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:textColorHint="@color/hint" />
+
+        <EditText
+            android:id="@+id/txtNumero"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:hint="Telefono"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:textColorHint="@color/hint" />
+
+        <TextView
+            android:id="@+id/txtlatitud"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:hint="Latitud"
+            android:textSize="17sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="16dp"
+            android:textColorHint="@color/hint" />
+
+        <TextView
+            android:id="@+id/txtlongitud"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:hint="Longitud"
+            android:textSize="17sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="16dp"
+            android:textColorHint="@color/hint"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnsalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text="Actualizar Contacto"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:background="@drawable/button_bg2"
+        app:layout_constraintTop_toBottomOf="@+id/txtlongitud" />
+</LinearLayout>
